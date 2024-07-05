@@ -1,8 +1,9 @@
 import express from "express";
 import connection from "../db/connection.js";
+import movieRoutes from "../routes/movieRoutes.js";
 
 const app = express();
-app.use(express());
+app.use(express(), movieRoutes);
 
 const db = await connection();
 
