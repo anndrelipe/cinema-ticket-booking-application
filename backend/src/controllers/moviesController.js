@@ -4,6 +4,11 @@ class movieController {
     static async getAllMovies (req, res) {
         try {
             const listaFilmes = await Movies.find({});
+
+            res.header({
+                "Access-Control-Allow-Origin": "*"
+            });
+            
             res.status(200).json({status : 200, content : listaFilmes})
         } catch (error) {
             console.log(error);
