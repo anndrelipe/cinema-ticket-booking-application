@@ -1,0 +1,11 @@
+.filmes-itens {
+  display: flex;
+}
+.filmes-itens .Filme-Item {
+  background-color: black;
+  margin: 0px 10px;
+}
+.filmes-itens .Filme-Item img {
+  height: 15vw;
+}
+
