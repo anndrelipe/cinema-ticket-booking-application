@@ -1,0 +1,12 @@
+html {
+  height: fit-content;
+}
+body {
+  background-color: #333852;
+  color: #9FA4B5;
+}
+
+.Conteudo {
+  margin: 50px 5vw;
+  width: fit-content;
+}

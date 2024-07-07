@@ -2,10 +2,20 @@
   display: flex;
 }
 .filmes-itens .Filme-Item {
-  background-color: black;
   margin: 0px 10px;
 }
 .filmes-itens .Filme-Item img {
   height: 15vw;
+  border-radius: 15px;
 }
 
+.Filme-Selec {
+  width: 100%;
+  height: 200px;
+  background-color: red;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.Filme-Selec img {
+  height: 200px;
+}
