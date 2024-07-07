@@ -14,7 +14,7 @@ export function Filmes() {
         const filmesData = res.data.content;
         setFilmes(filmesData);
         if (filmesData.length > 0) {
-          setFilmeSelecionado(filmesData[0].media.img2);
+          setFilmeSelecionado(filmesData[0]);
         }
       })
       .catch(err => {
@@ -23,16 +23,21 @@ export function Filmes() {
   }, []);
 
   const handleMouseOver = (filme) => {
-    setFilmeSelecionado(filme.media.img2);
+    setFilmeSelecionado(filme);
   };
 
   return (
     <div className='Filmes'>
+      <div className='Container-FilmeSelec'>
       {filmeSelecionado && (
         <FilmeSelec
-          imgselec={filmeSelecionado}
+          Sinopse={filmeSelecionado.description}
+          Titulo={filmeSelecionado.title}
+          TrailerLink={filmeSelecionado.media.trailer_link1}
+          imgselec={filmeSelecionado.media.img2}
         />
       )}
+      </div>
       <div className='Filmes-Destaque'>
         <h1>Em cartaz</h1>
         <div className='filmes-itens'>
