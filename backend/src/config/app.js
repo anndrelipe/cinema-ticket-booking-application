@@ -17,7 +17,7 @@ db.once("open", () => {
 
 
 app.get('/', (req, res) => {
-    res.status(200).send("Tudo Show");
+    res.status(200).send("Try /api/movies.");
 });
 
 export default app
