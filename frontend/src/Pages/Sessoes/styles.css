@@ -1,0 +1,32 @@
+.filme-detalhes .filme-detalhes-wrap {
+  display: flex;
+  font-size: small;
+  overflow: hidden;
+  padding: 20px;
+  background-size: cover;
+  background-color: rgb(24, 23, 23);
+  background-blend-mode: overlay;
+}
+.filme-detalhes .filme-detalhes-wrap img {
+  height: 15vw;
+  margin-right: 20px;
+}
+.filme-detalhes .filme-detalhes-wrap .filme-detalhes-desc {
+  width: 40vw;
+}
+.filme-detalhes .filme-detalhes-wrap .filme-detalhes-sinopse {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: 25px;
+}
+.filme-detalhes .filme-detalhes-wrap .filme-detalhes-desc-info {
+  display: flex;
+  margin-top: 5px;
+}
+.filme-detalhes .filme-detalhes-wrap .filme-detalhes-desc-info 
+.filme-detalhes-desc-info-divisao {
+  width: 1px;
+  background-color: #fff;
+  margin: 0 5px;
+}
