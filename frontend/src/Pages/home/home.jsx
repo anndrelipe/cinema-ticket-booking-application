@@ -1,7 +1,15 @@
+import { Navbar } from "../../components/Navbar/Navbar";
+import { Filmes } from "../../components/Filmes/Filmes";
+import { Footer } from "../../components/Footer/Footer";
+
 export function Home() {
   return(
-    <>
-    <h1>Essa é a home</h1>
-    </>
+    <div className="App">
+      <Navbar/>
+    <div className='Conteudo'>
+      <Filmes/>
+    </div>
+      <Footer/>
+    </div>
   )
 }
