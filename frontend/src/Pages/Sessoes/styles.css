@@ -2,7 +2,7 @@
   display: flex;
   font-size: small;
   overflow: hidden;
-  padding: 20px;
+  padding: 20px 5vw;
   background-size: cover;
   background-color: rgb(24, 23, 23);
   background-blend-mode: overlay;
@@ -29,4 +29,90 @@
   width: 1px;
   background-color: #fff;
   margin: 0 5px;
+}
+
+/* Sessão Item */
+
+.SessaoItem {
+  background-color: #272a2e;
+  margin-bottom: 25px;
+  height: fit-content;
+  padding: 30px;
+  border-radius: 20px;
+  width: 89vw;
+}
+.SessaoItem-Cinema {
+  display: flex;
+  align-items: center;
+}
+.SessaoItem-Cinema .popcorn-icon {
+  margin-right: 15px;
+}
+.SessaoItem-Cinema-End {
+  font-size: small;
+  font-weight: 500;
+  color: #6e6f70;
+}
+.SessaoItem-Cinema-Nome {
+  font-size: large;
+  color: #d6ccee;
+}
+.SessaoItem .SessaoItem-divisao {
+  height: 2px;
+  width: 100%;
+  background-color: #41464dc9;
+  margin: 20px 0;
+}
+.SessaoItem-SessoesCategs {
+  margin-bottom: 15px;
+}
+.SessaoItem-SessoesCategs-Categoria {
+  background-color: #5324C0;
+  width: fit-content;
+  padding: 6px;
+  font-size: small;
+  font-weight: 600;
+  border-radius: 5px;
+  margin-bottom: 8px;
+}
+.SessaoItem-SessoesCategs-Horarios {
+  display: flex;
+}
+.SessaoItem-SessoesCategs-Horario {
+  padding: 8px 4vw;
+  margin-right: 10px;
+  border: 2px solid #d6ccee;
+  border-radius: 10px;
+  color: #d6ccee;
+}
+
+.DiasSessoes {
+  background-color: #343C46;
+  display: flex;
+  padding: 15px;
+  margin-bottom: 15px;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+}
+.DiasSessoes-dia {
+  display: flex;
+  flex-direction: column;
+  font-size: medium;
+  align-items: center;
+  width: 10vw;
+  cursor: pointer;
+  height: 100%;
+  color: #d6ccee;
+}
+.DiasSessoes-dia:hover {
+  color: #b096ec;
+}
+.DiaAtual {
+  font-size: large;
+  font-weight: 600;
+  border: 2px solid #a47dff;
+  border-radius: 10px;
+  padding: 5px 0;
+  color: #a47dff;
 }
