@@ -30,17 +30,22 @@ export function FilmeDetalhes() {
         <img src={movie.media.img1} alt={movie.title} />
         
           <div className='filme-detalhes-desc'>
-          <h1>{movie.title}</h1>
-          <p><strong>Classificação Indicativa:</strong> {movie.parental_rating} anos</p>
+            <div className="filme-detalhes-desc-up">
+              <h1>{movie.title}</h1>
+              <p><strong>Classificação Indicativa:</strong> {movie.parental_rating} anos</p>
 
-          <div className='filme-detalhes-desc-info'>
-            <p>{movie.duration_time} minutos</p>
-            <div className='filme-detalhes-desc-info-divisao'></div>
-            <p>{movie.genres.join(', ')}</p>
-          </div>
+              <div className='filme-detalhes-desc-info'>
+                <p>{movie.duration_time} minutos</p>
+                <div className='filme-detalhes-desc-info-divisao'></div>
+                <p>{movie.genres.join(', ')}</p>
+              </div>
+              <p className='filme-detalhes-sinopse'>{movie.description}</p>
+            </div>
 
-          <p className='filme-detalhes-sinopse'>{movie.description}</p>
-          {movie.media.trailer_link1 && <a href={movie.media.trailer_link1} target="_blank" rel="noopener noreferrer">Assista o Trailer</a>}
+
+              <div className='filme-detalhes-trailer'>
+              {movie.media.trailer_link1 && <a href={movie.media.trailer_link1} target="_blank" rel="noopener noreferrer">Assista o Trailer</a>}
+              </div>
           </div>
           
         </div>

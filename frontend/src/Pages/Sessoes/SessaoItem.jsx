@@ -1,4 +1,5 @@
 import { Popcorn } from "lucide-react"
+import { Link } from "react-router-dom"
 
 export function SessaoItem() {
   return (
@@ -20,9 +21,14 @@ export function SessaoItem() {
                 Legendado</div>
 
               <div className="SessaoItem-SessoesCategs-Horarios">
-                <div className="SessaoItem-SessoesCategs-Horario">
-                  21:00
-                </div>
+
+                <Link to={`/movie/checkout`}>
+
+                  <div className="SessaoItem-SessoesCategs-Horario">
+                    21:00
+                  </div>
+                
+                </Link>
                 <div className="SessaoItem-SessoesCategs-Horario">
                   21:45
                 </div>

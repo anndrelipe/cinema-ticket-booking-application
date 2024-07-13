@@ -8,17 +8,16 @@
   background-blend-mode: overlay;
 }
 .filme-detalhes .filme-detalhes-wrap img {
-  height: 15vw;
+  height: 20vw;
   margin-right: 20px;
 }
 .filme-detalhes .filme-detalhes-wrap .filme-detalhes-desc {
-  width: 40vw;
+  width: 100%;
 }
 .filme-detalhes .filme-detalhes-wrap .filme-detalhes-sinopse {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  margin-top: 25px;
+  width: 50%;
+  font-size: 0.8vw;
+  padding-top: 20px;
 }
 .filme-detalhes .filme-detalhes-wrap .filme-detalhes-desc-info {
   display: flex;
@@ -30,7 +29,22 @@
   background-color: #fff;
   margin: 0 5px;
 }
-
+.filme-detalhes-trailer {
+  margin-top: 20px;
+}
+.filme-detalhes-trailer a {
+  text-decoration: none;
+  color: #fff;
+  background-color: #5324C0;
+  border-radius: 10px;
+  height: 40px;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8vw;
+  font-weight: 600;
+}
 /* Sessão Item */
 
 .SessaoItem {
@@ -84,6 +98,7 @@
   border: 2px solid #d6ccee;
   border-radius: 10px;
   color: #d6ccee;
+  cursor: pointer;
 }
 
 .DiasSessoes {
