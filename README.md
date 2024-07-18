@@ -6,7 +6,6 @@ Este projeto é uma aplicação web para a compra de ingressos de cinema, desenv
 ### Front-end
 
     JavaScript
-    TypeScript
     React
 
 ### Back-end
@@ -16,7 +15,7 @@ Este projeto é uma aplicação web para a compra de ingressos de cinema, desenv
 
 ### Banco de Dados
 
-    MySQL 
+    Mariadb, MongoDb 
 
 ### Containerização
 
