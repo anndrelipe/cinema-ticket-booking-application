@@ -10,7 +10,7 @@ CREATE TABLE filmes (
 CREATE TABLE salas (
     id INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
     num_sala INT NOT NULL,
-    tipo_sala VARCHAR(5) NOT NULL 
+    tipo_sala VARCHAR(6) NOT NULL 
 );
 
 CREATE TABLE cinemas (
@@ -26,8 +26,8 @@ CREATE TABLE sessoes (
     cinema_id INT NOT NULL,
     tipo_audio VARCHAR(10) NOT NULL,
     formato_exibicao VARCHAR(2) NOT NULL,
-    dia DATE NOT NULL,
-    horario TIME NOT NULL,
+    dia VARCHAR(10) NOT NULL,
+    horario VARCHAR(2) NOT NULL,
     data_criacao DATETIME DEFAULT NOW(),
     CONSTRAINT fk_filmes_id FOREIGN KEY (filme_id) REFERENCES filmes(id),
     CONSTRAINT fk_sala_id FOREIGN KEY (sala_id) REFERENCES salas(id),

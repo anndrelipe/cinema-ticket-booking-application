@@ -1,4 +1,4 @@
-import mongoose, { mongo } from "mongoose";
+import mongoose from "mongoose";
 
 const DB_CONNECTION_LINK = process.env.MONGODB_CONNECTION_LINK;
 
