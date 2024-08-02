@@ -2,9 +2,10 @@ import express from "express";
 import connection from "../db/connection.js";
 import movieRoutes from "../routes/movieRoutes.js";
 import retornaConexaoMysql from "../db/sqlConnection.js";
+import sessoesRouter from "../routes/sessoesRoutes.js";
 
 const app = express();
-app.use(express(), movieRoutes);
+app.use(express(), movieRoutes, sessoesRouter);
 
 const sqlConnection = await retornaConexaoMysql();
 const db = await connection();
