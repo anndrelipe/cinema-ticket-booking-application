@@ -5,7 +5,7 @@ import retornaConexaoMysql from "../db/sqlConnection.js";
 import sessoesRouter from "../routes/sessoesRoutes.js";
 
 const app = express();
-app.use(express(), movieRoutes, sessoesRouter);
+app.use(express.json(), movieRoutes, sessoesRouter);
 
 const sqlConnection = await retornaConexaoMysql();
 const db = await connection();
